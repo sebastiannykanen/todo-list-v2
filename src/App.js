@@ -30,7 +30,7 @@ function App() {
 
   useEffect(() => {
     getTodos();
-  }, [getTodos(), inputText]);
+  }, [getTodos, inputText]);
 
   const addTodo = (e) => {
     e.preventDefault();
