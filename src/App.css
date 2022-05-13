@@ -1,38 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 100;
+  background-color: #c67174;
+}
+
+h1 {
+  color: #f8fafa;
+  font-size: 3rem;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+}
+
+header {
+  padding: 10rem;
+}
+
+form {
+  padding: 1rem;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.todoInput {
+  background-color: #f8fafa;
+  border: none;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  padding-left: 0.3rem;
+}
+
+.todoInput:focus {
+  outline: none;
+}
+
+.submit-button {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.submit-button:hover {
+  cursor: pointer;
+}
+
+.fa-plus-square {
+  font-size: 2rem;
+}
+
+.list-of-todos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
+  width: 15rem;
+}
+
+.todos {
+  color: #f8fafa;
+  width: 100%;
+  text-align: left;
+}
+
+.fa-trash {
+  font-size: 2rem;
+}
+
+.trash-btn {
+  background: #555555;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
 }
