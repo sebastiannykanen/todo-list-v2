@@ -30,7 +30,8 @@ function App() {
 
   useEffect(() => {
     getTodos();
-  }, [inputText]); // eslint-disable-line no-eval
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [inputText]);
 
   const addTodo = (e) => {
     e.preventDefault();
