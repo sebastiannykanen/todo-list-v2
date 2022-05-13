@@ -30,7 +30,7 @@ function App() {
 
   useEffect(() => {
     getTodos();
-  }, [getTodos, inputText]);
+  }, [inputText]); // eslint-disable-line no-eval
 
   const addTodo = (e) => {
     e.preventDefault();
