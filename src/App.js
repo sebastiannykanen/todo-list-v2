@@ -28,13 +28,9 @@ function App() {
     }
   }, [inputText]);
 
-  useEffect(
-    () => {
-      getTodos();
-    },
-    getTodos(),
-    [inputText]
-  );
+  useEffect(() => {
+    getTodos();
+  }, [getTodos(), inputText]);
 
   const addTodo = (e) => {
     e.preventDefault();
