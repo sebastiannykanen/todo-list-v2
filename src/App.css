@@ -9,7 +9,7 @@
 
 h1 {
   color: #f8fafa;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .App {
@@ -18,14 +18,15 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 10rem;
 }
 
 header {
-  padding: 10rem;
+  padding: 5rem;
 }
 
 form {
-  padding: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,9 +35,10 @@ form {
 .todoInput {
   background-color: #f8fafa;
   border: none;
-  height: 2.5rem;
+  height: 2.2rem;
   font-size: 1.5rem;
   padding-left: 0.3rem;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .todoInput:focus {
@@ -46,14 +48,17 @@ form {
 .submit-button {
   height: 2.5rem;
   width: 2.5rem;
+  border: none;
 }
 
 .submit-button:hover {
   cursor: pointer;
 }
 
-.fa-plus-square {
-  font-size: 2rem;
+.fa-square-plus {
+  font-size: 2.5rem;
+  color: #f8fafa;
+  margin-left: 0.5rem;
 }
 
 .list-of-todos {
@@ -61,7 +66,7 @@ form {
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
-  width: 15rem;
+  width: 18rem;
 }
 
 .todos {
@@ -75,7 +80,6 @@ form {
 }
 
 .trash-btn {
-  background: #555555;
   color: white;
   border: none;
   padding: 1rem;

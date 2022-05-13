@@ -54,13 +54,16 @@ function App() {
           value={inputText}
           className="todoInput"
           type="text"
+          placeholder="Type here..."
           onChange={(e) => setInputText(e.target.value)}
         ></input>
         <button
           className="submit-button"
           onClick={addTodo}
           disabled={disableSubmit}
-        ></button>
+        >
+          <i class="fa-solid fa-square-plus"></i>
+        </button>
       </form>
       {todos.map((todos) => {
         return (
